@@ -1,6 +1,7 @@
 function findTopNames(students) {
     var topStudents = students.filter(function (student) { return student.score > 8; });
-    return topStudents.map(function (student) { return student.name; }).slice(0, 2);
+    var topNames = topStudents.map(function (student) { return student.name; });
+    return topNames;
 }
 var students1 = [
     { name: "john", score: 10 },

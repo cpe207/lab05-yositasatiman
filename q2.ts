@@ -5,7 +5,11 @@ interface Student {
 
 function findTopNames(students) {
   const topStudents = students.filter(student => student.score > 8);
-  return topStudents.map(student => student.name).slice(0, 2);
+
+  const topNames = topStudents.map(student => student.name);
+
+  return topNames;
+  
 }
 
 const students1 = [
